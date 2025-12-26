@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RWG Fresh – Online FMCG Mart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<link rel="stylesheet" href="stylesheet/style.css"/>
+<body>
+
+<!-- TOP BAR -->
+<header class="top-bar py-2">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center gap-3">
+      <!-- Brand -->
+      <div class="d-flex flex-column">
+        <div class="brand-mark">
+          <span>R</span><span>W</span><span>G</span>
+        </div>
+        <span class="badge-text mt-1">Fresh FMCG delivery</span>
+      </div>
+
+      <!-- Search -->
+      <form class="ms-auto me-auto search-shell d-flex align-items-center gap-1" style="min-width:250px;max-width:520px;">
+        <select class="form-select form-select-sm d-none d-md-block" style="max-width:150px;">
+          <option selected>All essentials</option>
+          <option>Grocery & staples</option>
+          <option>Snacks & biscuits</option>
+          <option>Beverages</option>
+          <option>Personal care</option>
+          <option>Home cleaning</option>
+        </select>
+        <input type="text" class="form-control form-control-sm" placeholder="Search rice, oil, milk, biscuits…" />
+        <button class="btn btn-sm search-btn" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+      <!-- Actions -->
+      <div class="d-flex align-items-center gap-3 ms-auto">
+        <div class="icon-pill d-none d-md-flex">
+          <i class="bi bi-geo-alt"></i><span>Deliver to Haridwar</span>
+        </div>
+        <div class="icon-pill d-none d-md-flex">
+          <i class="bi bi-person-circle"></i><span>Sign in</span>
+        </div>
+        <div class="icon-pill position-relative">
+          <i class="bi bi-bag-check fs-5"></i>
+          <span>Cart</span>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:10px;">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO + CATEGORIES -->
+<main class="hero-wrap">
+  <div class="container">
+    <div class="row g-3">
+      <!-- Left hero -->
+      <div class="col-lg-8">
+        <section class="hero-card">
+          <span class="hero-chip">
+            <i class="bi bi-lightning-charge-fill"></i> 30‑minute delivery
+          </span>
+          <h1>Daily FMCG needs at your doorstep.</h1>
+          <p>Order groceries, snacks, beverages, and home-care products from trusted brands with transparent pricing and reliable delivery.</p>
+          <div class="hero-cta">
+            <button class="btn btn-main">Start shopping</button>
+            <button class="btn btn-ghost btn-sm">Browse categories</button>
+          </div>
+          <img src="https://via.placeholder.com/260x160/fbf7ed/00a152?text=Fresh+Groceries" alt="Fresh groceries" class="hero-veg">
+        </section>
+
+        <!-- Category pills -->
+        <div class="cat-scroll">
+          <button class="cat-pill active" data-cat="all"><i class="bi bi-grid-1x2"></i>All</button>
+          <button class="cat-pill" data-cat="grocery"><i class="bi bi-bag-dash"></i>Grocery & staples</button>
+          <button class="cat-pill" data-cat="snacks"><i class="bi bi-emoji-smile"></i>Snacks & biscuits</button>
+          <button class="cat-pill" data-cat="beverages"><i class="bi bi-cup-straw"></i>Beverages</button>
+          <button class="cat-pill" data-cat="personal"><i class="bi bi-droplet-half"></i>Personal care</button>
+          <button class="cat-pill" data-cat="home"><i class="bi bi-house-heart"></i>Home cleaning</button>
+        </div>
+      </div>
+
+      <!-- Right info -->
+      <div class="col-lg-4">
+        <aside class="info-card">
+          <h5>Smart monthly basket</h5>
+          <p>Save your recurring FMCG items and reorder your entire basket in one tap every month.</p>
+          <ul class="mb-2" style="font-size:12px;">
+            <li>Repeat last month’s order instantly.</li>
+            <li>Track expiry-sensitive items easily.</li>
+            <li>Get reminders before you run out.</li>
+          </ul>
+          <button class="btn btn-sm btn-outline-success w-100 mt-2">
+            <i class="bi bi-arrow-repeat me-1"></i> Create my basket
+          </button>
+        </aside>
+      </div>
+    </div>
+
+    <!-- FMCG Sections -->
+    <section class="section-heading">
+      <h2>Top picks in grocery & staples</h2>
+      <small>Handpicked FMCG essentials</small>
+    </section>
+    <div class="row g-3">
+      <!-- GROCERY -->
+      <!-- Example product card on main page -->
+<div class="col-6 col-md-3 fmcg-item" data-cat="grocery">
+  <article class="item-card">
+    <a href="deatils.html" style="text-decoration:none;color:inherit;">
+      <div class="item-img-box">
+        <img src="https://via.placeholder.com/220x140/fbf7ed/000000?text=Rice+5kg"
+             alt="Basmati rice 5kg" class="img-fluid">
+      </div>
+      <span class="item-tag">Grocery · Best seller</span>
+      <div class="item-name">Premium Basmati Rice 5kg</div>
+      <div class="item-meta">Aged long‑grain rice, ideal for daily cooking.</div>
+      <div class="price-line">
+        <span class="price-main">₹449</span>
+        <span class="price-strike">₹599</span>
+        <span class="price-off">25% off</span>
+      </div>
+    </a>
+    <!-- Add to cart on list -->
+    <button class="cart-btn-sm add-to-cart-btn"
+            data-id="rice5"
+            data-name="Premium Basmati Rice 5kg"
+            data-price="449">
+      <i class="bi bi-plus-circle"></i> Add
+    </button>
+  </article>
+</div>
+
+
+      <div class="col-6 col-md-3 fmcg-item" data-cat="grocery">
+  <article class="item-card">
+    <a href="deatils.html" style="text-decoration:none;color:inherit;">
+      <div class="item-img-box">
+        <img src="https://via.placeholder.com/220x140/fbf7ed/000000?text=Rice+5kg"
+             alt="Basmati rice 5kg" class="img-fluid">
+      </div>
+      <span class="item-tag">Grocery · Best seller</span>
+      <div class="item-name">Premium Basmati Rice 5kg</div>
+      <div class="item-meta">Aged long‑grain rice, ideal for daily cooking.</div>
+      <div class="price-line">
+        <span class="price-main">₹449</span>
+        <span class="price-strike">₹599</span>
+        <span class="price-off">25% off</span>
+      </div>
+    </a>
+    <!-- Add to cart on list -->
+    <button class="cart-btn-sm add-to-cart-btn"
+            data-id="rice5"
+            data-name="Premium Basmati Rice 5kg"
+            data-price="449">
+      <i class="bi bi-plus-circle"></i> Add
+    </button>
+  </article>
+</div>
+
+      <!-- SNACKS -->
+      <div class="col-6 col-md-3 fmcg-item" data-cat="snacks">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fbf7ed/000000?text=Family+Chips" alt="Chips" class="img-fluid">
+          </div>
+          <span class="item-tag">Snacks</span>
+          <div class="item-name">Potato Chips Party Pack</div>
+          <div class="item-meta">Crispy salted chips for family snacking.</div>
+          <div class="price-line">
+            <span class="price-main">₹89</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-3 fmcg-item" data-cat="snacks">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fffdf5/000000?text=Cookies" alt="Cookies" class="img-fluid">
+          </div>
+          <span class="item-tag">Biscuits</span>
+          <div class="item-name">Butter Cookies 500g Tin</div>
+          <div class="item-meta">Rich, crunchy cookies for tea time.</div>
+          <div class="price-line">
+            <span class="price-main">₹149</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+    </div>
+
+    <section class="section-heading">
+      <h2>Refresh with beverages</h2>
+      <small>Tea, coffee & juices</small>
+    </section>
+    <div class="row g-3">
+      <!-- BEVERAGES -->
+      <div class="col-6 col-md-3 fmcg-item" data-cat="beverages">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fbf7ed/000000?text=Tea+500g" alt="Tea" class="img-fluid">
+          </div>
+          <span class="item-tag">Tea</span>
+          <div class="item-name">Strong CTC Tea 500g</div>
+          <div class="item-meta">Bold flavour for your morning chai.</div>
+          <div class="price-line">
+            <span class="price-main">₹199</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+
+      <div class="col-6 col-md-3 fmcg-item" data-cat="beverages">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fffdf5/000000?text=Instant+Coffee" alt="Coffee" class="img-fluid">
+          </div>
+          <span class="item-tag">Coffee</span>
+          <div class="item-name">Instant Coffee 200g Jar</div>
+          <div class="item-meta">Smooth and aromatic instant coffee.</div>
+          <div class="price-line">
+            <span class="price-main">₹249</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+
+      <!-- PERSONAL CARE -->
+      <div class="col-6 col-md-3 fmcg-item" data-cat="personal">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fbf7ed/000000?text=Shampoo" alt="Shampoo" class="img-fluid">
+          </div>
+          <span class="item-tag">Personal care</span>
+          <div class="item-name">Anti‑dandruff Shampoo 650ml</div>
+          <div class="item-meta">Clinically proven flake control.</div>
+          <div class="price-line">
+            <span class="price-main">₹299</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+
+      <!-- HOME CLEANING -->
+      <div class="col-6 col-md-3 fmcg-item" data-cat="home">
+        <article class="item-card">
+          <div class="item-img-box">
+            <img src="https://via.placeholder.com/220x140/fffdf5/000000?text=Floor+Cleaner" alt="Floor cleaner" class="img-fluid">
+          </div>
+          <span class="item-tag">Home care</span>
+          <div class="item-name">Floor Cleaner 2L</div>
+          <div class="item-meta">Removes tough stains with fresh fragrance.</div>
+          <div class="price-line">
+            <span class="price-main">₹219</span>
+          </div>
+          <button class="cart-btn-sm">
+            <i class="bi bi-plus-circle"></i> Add
+          </button>
+        </article>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container text-center">
+    RWG Fresh · Fast‑moving consumer goods delivered with a modern, mobile‑first layout inspired by current grocery design trends [web:30][web:35][web:38].
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Simple category filter for pills
+  const pills = document.querySelectorAll('.cat-pill');
+  const items = document.querySelectorAll('.fmcg-item');
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const cat = pill.dataset.cat;
+
+      items.forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+<script>
+  function getCart() {
+    return JSON.parse(localStorage.getItem('rwgCart') || '[]');
+  }
+
+  function saveCart(cart) {
+    localStorage.setItem('rwgCart', JSON.stringify(cart));
+  }
+
+  function updateCartBadge() {
+    const cart = getCart();
+    const count = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+    const badge = document.querySelector('.top-bar .badge, .top-nav .badge');
+    if (badge) badge.textContent = count;
+  }
+
+  function addToCartFromButton(btn) {
+    const id = btn.dataset.id;
+    const name = btn.dataset.name;
+    const price = parseFloat(btn.dataset.price || '0');
+    let cart = getCart();
+    const existing = cart.find(p => p.id === id);
+    if (existing) {
+      existing.qty = (existing.qty || 1) + 1;
+    } else {
+      cart.push({ id, name, price, qty: 1 });
+    }
+    saveCart(cart);
+    updateCartBadge();
+    btn.innerHTML = '<i class="bi bi-check2"></i> Added';
+    setTimeout(() => {
+      btn.innerHTML = '<i class="bi bi-plus-circle"></i> Add';
+    }, 1200);
+  }
+
+  document.addEventListener('click', e => {
+    if (e.target.closest('.add-to-cart-btn')) {
+      const btn = e.target.closest('.add-to-cart-btn');
+      addToCartFromButton(btn);
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', updateCartBadge);
+</script>
+
+</body>
+</html>

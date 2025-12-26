@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Detail – RWG Fresh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<link rel="stylesheet" href="stylesheet/details.css"/>
+<body>
+<header class="top-bar py-2">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="text-decoration-none text-dark">
+      <div class="brand-mark">
+        <span>R</span><span>W</span><span>G</span>
+      </div>
+    </a>
+    <div class="d-flex align-items-center gap-3">
+      <div class="d-none d-md-flex align-items-center text-muted" style="font-size:13px;">
+        <i class="bi bi-geo-alt me-1"></i>Deliver to Haridwar
+      </div>
+      <div class="position-relative" style="font-size:13px;cursor:pointer;">
+        <i class="bi bi-bag-check fs-5"></i> Cart
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:10px;">0</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="mt-3 mb-2" style="font-size:12px;">
+    <a href="index.html" class="text-decoration-none text-muted">Home</a> /
+    <span id="breadcrumb-name">Product</span>
+  </nav>
+
+  <!-- PRODUCT DETAIL -->
+  <section class="detail-card row g-4">
+    <div class="col-md-4">
+      <div class="detail-img-box">
+        <img id="product-image" src="" alt="Product image" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h1 id="product-name" class="h4 mb-2">Product name</h1>
+      <p id="product-subtitle" class="text-muted mb-2" style="font-size:13px;"></p>
+      <div class="mb-2" style="font-size:12px;color:#10b981;">
+        <i class="bi bi-patch-check-fill"></i> Assured quality FMCG product
+      </div>
+
+      <div class="mb-3">
+        <span id="product-price" class="price-main">₹0</span>
+        <span id="product-old" class="price-strike d-none"></span>
+        <span id="product-off" class="price-off d-none"></span>
+      </div>
+
+      <p id="product-desc" style="font-size:13px;" class="mb-3">
+        Product description goes here.
+      </p>
+
+      <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+        <button id="detail-add-btn"
+                class="add-btn-lg"
+                data-id=""
+                data-name=""
+                data-price="">
+          <i class="bi bi-cart-plus"></i> Add to cart
+        </button>
+        <button class="btn btn-outline-secondary btn-sm">
+          <i class="bi bi-heart me-1"></i> Save for later
+        </button>
+      </div>
+
+      <ul style="font-size:12px;color:#6b7280;" class="mb-0">
+        <li>Expected delivery: within 1 day in Haridwar.</li>
+        <li>No‑contact delivery and sealed FMCG packaging.</li>
+        <li>Easy replacement on damaged or leaked items.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS -->
+  <section class="reviews-card mt-3">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h2 class="h6 mb-0">Customer reviews</h2>
+      <span style="font-size:12px;color:#6b7280;">Based on <span id="review-count">3</span> reviews</span>
+    </div>
+
+    <!-- Overall rating -->
+    <div class="d-flex align-items-center mb-2">
+      <span class="me-2" style="font-size:20px;font-weight:700;" id="overall-rating">4.5</span>
+      <div>
+        <span class="star-fill bi bi-star-fill"></span>
+        <span class="star-fill bi bi-star-fill"></span>
+        <span class="star-fill bi bi-star-fill"></span>
+        <span class="star-fill bi bi-star-fill"></span>
+        <span class="star-fill bi bi-star-half"></span>
+      </div>
+    </div>
+
+    <!-- Individual reviews (static sample; you can generate from JS if you want) [web:49][web:50][web:52] -->
+    <div class="review-item">
+      <div class="d-flex justify-content-between">
+        <div>
+          <div class="review-name">Ankit Sharma</div>
+          <div class="review-date">Rated 5 · 2 days ago</div>
+        </div>
+        <div>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+        </div>
+      </div>
+      <p class="review-text mb-1">Rice quality is excellent and grains are long and fragrant. Perfect for daily use.</p>
+    </div>
+
+    <div class="review-item">
+      <div class="d-flex justify-content-between">
+        <div>
+          <div class="review-name">Neha Verma</div>
+          <div class="review-date">Rated 4 · 1 week ago</div>
+        </div>
+        <div>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="bi bi-star" style="color:#d1d5db;"></span>
+        </div>
+      </div>
+      <p class="review-text mb-1">Good quality and packaging. Delivery was on time, would buy again.</p>
+    </div>
+
+    <div class="review-item">
+      <div class="d-flex justify-content-between">
+        <div>
+          <div class="review-name">Mohit Singh</div>
+          <div class="review-date">Rated 4 · 3 weeks ago</div>
+        </div>
+        <div>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="star-fill bi bi-star-fill"></span>
+          <span class="bi bi-star" style="color:#d1d5db;"></span>
+        </div>
+      </div>
+      <p class="review-text mb-0">Nice aroma after cooking and grains do not break easily.</p>
+    </div>
+  </section>
+
+  <!-- SIMILAR PRODUCTS -->
+  <section class="mt-3">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <h2 class="h6 mb-0">Similar products</h2>
+      <a href="index.html#grocery" style="font-size:12px;text-decoration:none;">View all grocery</a>
+    </div>
+    <div class="row g-2" id="similar-products-row">
+      <!-- Example similar product card; JS can overwrite or clone it [web:54]. -->
+      <div class="col-6 col-md-3">
+        <div class="similar-card">
+          <a href="product.html?id=atta10" class="text-decoration-none text-dark">
+            <div class="similar-img-box">
+              <img src="https://via.placeholder.com/200x130/fffdf5/000000?text=Atta+10kg" alt="Atta 10kg" class="img-fluid">
+            </div>
+            <div class="similar-name mt-1">Whole Wheat Atta 10kg</div>
+          </a>
+          <div class="d-flex justify-content-between align-items-center mt-1">
+            <span class="similar-price">₹529</span>
+            <button class="similar-add add-to-cart-btn"
+                    data-id="atta10"
+                    data-name="Whole Wheat Atta 10kg"
+                    data-price="529">
+              <i class="bi bi-plus-circle"></i> Add
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- You can manually add more similar cards, or generate via JS -->
+    </div>
+  </section>
+</main>
+
+<footer class="mt-4 py-3 text-center text-muted" style="font-size:11px;">
+  RWG Fresh · Product detail with reviews and similar FMCG items using Bootstrap 5 patterns [web:49][web:52][web:54].
+</footer>
+
+<script>
+  // Basic product data; keep in sync with main page
+  const PRODUCTS = {
+    'rice5': {
+      id:'rice5',
+      name:'Premium Basmati Rice 5kg',
+      subtitle:'Aged long‑grain basmati for daily meals',
+      price:449,
+      oldPrice:599,
+      off:'25% off',
+      desc:'High‑quality basmati rice sourced from trusted mills, suitable for pulao, biryani and everyday cooking.',
+      img:'https://via.placeholder.com/220x140/fbf7ed/000000?text=Rice+5kg',
+      similar:['atta10']
+    },
+    'atta10': {
+      id:'atta10',
+      name:'Whole Wheat Atta 10kg',
+      subtitle:'Chakki‑fresh atta for soft rotis every day',
+      price:529,
+      oldPrice:649,
+      off:'18% off',
+      desc:'Stone‑ground whole wheat atta that keeps chapatis soft and fluffy for longer.',
+      img:'https://via.placeholder.com/220x140/fffdf5/000000?text=Atta+10kg',
+      similar:['rice5']
+    }
+    // add more products as needed
+  };
+
+  function getCart() {
+    return JSON.parse(localStorage.getItem('rwgCart') || '[]');
+  }
+  function saveCart(cart) {
+    localStorage.setItem('rwgCart', JSON.stringify(cart));
+  }
+  function updateCartBadge() {
+    const cart = getCart();
+    const count = cart.reduce((sum, item) => sum + (item.qty || 1), 0);
+    const badge = document.querySelector('header .badge');
+    if (badge) badge.textContent = count;
+  }
+  function addToCart(id,name,price){
+    let cart = getCart();
+    const existing = cart.find(p => p.id === id);
+    if (existing) {
+      existing.qty = (existing.qty || 1) + 1;
+    } else {
+      cart.push({id,name,price,qty:1});
+    }
+    saveCart(cart);
+    updateCartBadge();
+  }
+
+  function loadProductFromQuery(){
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const p = PRODUCTS[id];
+    if(!p){
+      document.getElementById('product-name').textContent = 'Product not found';
+      return;
+    }
+    // Main content
+    document.getElementById('breadcrumb-name').textContent = p.name;
+    document.getElementById('product-name').textContent = p.name;
+    document.getElementById('product-subtitle').textContent = p.subtitle || '';
+    document.getElementById('product-image').src = p.img;
+    document.getElementById('product-image').alt = p.name;
+    document.getElementById('product-price').textContent = '₹' + p.price;
+    if(p.oldPrice){
+      const oldEl = document.getElementById('product-old');
+      oldEl.textContent = '₹' + p.oldPrice;
+      oldEl.classList.remove('d-none');
+    }
+    if(p.off){
+      const offEl = document.getElementById('product-off');
+      offEl.textContent = p.off;
+      offEl.classList.remove('d-none');
+    }
+    document.getElementById('product-desc').textContent = p.desc;
+    const btn = document.getElementById('detail-add-btn');
+    btn.dataset.id = p.id;
+    btn.dataset.name = p.name;
+    btn.dataset.price = p.price;
+
+    // Similar products (simple example: use IDs from p.similar)
+    const row = document.getElementById('similar-products-row');
+    if (p.similar && p.similar.length) {
+      row.innerHTML = '';
+      p.similar.forEach(sid => {
+        const sp = PRODUCTS[sid];
+        if (!sp) return;
+        const col = document.createElement('div');
+        col.className = 'col-6 col-md-3';
+        col.innerHTML = `
+          <div class="similar-card">
+            <a href="product.html?id=${sp.id}" class="text-decoration-none text-dark">
+              <div class="similar-img-box">
+                <img src="${sp.img}" alt="${sp.name}" class="img-fluid">
+              </div>
+              <div class="similar-name mt-1">${sp.name}</div>
+            </a>
+            <div class="d-flex justify-content-between align-items-center mt-1">
+              <span class="similar-price">₹${sp.price}</span>
+              <button class="similar-add add-to-cart-btn"
+                      data-id="${sp.id}"
+                      data-name="${sp.name}"
+                      data-price="${sp.price}">
+                <i class="bi bi-plus-circle"></i> Add
+              </button>
+            </div>
+          </div>`;
+        row.appendChild(col);
+      });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadProductFromQuery();
+    updateCartBadge();
+
+    // Add to cart on main detail button
+    const detailBtn = document.getElementById('detail-add-btn');
+    detailBtn.addEventListener('click', function(){
+      const id = this.dataset.id;
+      const name = this.dataset.name;
+      const price = parseFloat(this.dataset.price);
+      addToCart(id,name,price);
+      this.innerHTML = '<i class="bi bi-check2-circle"></i> Added';
+      setTimeout(() => {
+        this.innerHTML = '<i class="bi bi-cart-plus"></i> Add to cart';
+      }, 1200);
+    });
+
+    // Add to cart for similar products
+    document.addEventListener('click', e => {
+      const btn = e.target.closest('.add-to-cart-btn');
+      if (!btn) return;
+      const id = btn.dataset.id;
+      const name = btn.dataset.name;
+      const price = parseFloat(btn.dataset.price);
+      addToCart(id,name,price);
+      btn.innerHTML = '<i class="bi bi-check2"></i> Added';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="bi bi-plus-circle"></i> Add';
+      }, 1000);
+    });
+  });
+</script>
+</body>
+</html>
